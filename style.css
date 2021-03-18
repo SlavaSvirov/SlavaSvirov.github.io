@@ -1,0 +1,148 @@
+* {
+  /* margin: 0 auto; */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+main {
+  margin: 50px auto;
+  max-width: 1200px;
+  display: flex;
+  height: 700px;
+  background-color: rgba(66, 64, 64, 0.575);
+}
+.nav {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: white;
+  font-size: 18px;
+}
+.logo > img {
+  width: 80px;
+  height: 80px;
+}
+.navbar {
+  list-style: none;
+  flex: 0 1 70%;
+}
+.navbar-item a > i {
+  padding-top: 50px;
+  font-size: 35px;
+  color: rgba(175, 173, 173, 0.884);
+}
+.navbar-item a > i:hover {
+  color: aquamarine;
+}
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo {
+  position: relative;
+  text-align: center;
+  top: -5%;
+  width: 40%;
+  height: 750px;
+  box-shadow: 10px 5px 15px black;
+  background: url("./img/DSC01201.jpeg") 25% 0 / cover no-repeat;
+  opacity: 0;
+  transition: 1s;
+  animation: show 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.photo-name {
+  margin-top: 500px;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+.photo-job {
+  font-size: 1.5em;
+  letter-spacing: 20px;
+  color: aquamarine;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  flex: 0 1 50%;
+  padding-right: 100px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 50%;
+}
+.about > h2 {
+  font-size: 3em;
+  margin: 0;
+}
+.info {
+  font-size: 1.5em;
+}
+.info-item {
+  color: aquamarine;
+}
+.info-item:nth-child(2):before {
+  content: "/";
+  padding-right: 10px;
+  color: rgba(175, 173, 173, 0.884);
+}
+.info-item:nth-child(2):after {
+  content: "/";
+  padding-left: 10px;
+  color: rgba(175, 173, 173, 0.884);
+}
+.description {
+  font-size: 20px;
+  color: rgba(175, 173, 173, 0.884);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.skills-item {
+  width: 30%;
+  font-size: 35px;
+  color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 40%;
+}
+.skills-title {
+  padding-top: 10px;
+  color: white;
+}
+.skills-description {
+  height: 60px;
+  width: 150px;
+  font-size: 18px;
+  word-wrap: break-word;
+  color: rgba(175, 173, 173, 0.884);
+}
